@@ -1,5 +1,4 @@
 # Simple git mirroring
-Simple git mirroring
 
 ##### Example usage:
 ```shell
