@@ -45,7 +45,7 @@ git branch -a | grep -v -E "origin|remote|sync_branch" | xargs git branch -D
 git fetch upstream
 
 # Track all fetched branches
-for brname in `git branch -r | grep upstream | grep -v master | grep -v HEAD | sed -e 's/.*\///g'`; do git branch --track $brname  upstream/$brname; done
+for brname in `git branch -r | grep upstream | grep -v master | grep -v HEAD | sed 's/upstream\///g'`; do git branch --track $brname  upstream/$brname; done
 
 # Push all branches and tags to our repo ($MYREPO)
 git push --all $MYREPO
