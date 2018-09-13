@@ -1,0 +1,16 @@
+*swp
+*.pyc
+.idea
+.env*
+*.tmp
+.vagrant
+Vagrantfile
+ansible.log
+*.tmp
+*.retry
+terraform
+.terraform
+*.iml
+test*.*
+ubuntu*.log
+.vscode/*
