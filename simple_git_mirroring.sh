@@ -48,6 +48,6 @@ git fetch upstream
 for brname in `git branch -r | grep upstream | grep -v HEAD | sed 's/upstream\///g'`; do git branch --track $brname  upstream/$brname; done
 
 # Push all branches and tags to our repo ($MYREPO)
-git push --all $MYREPO
-git push --tags $MYREPO
+git push --all -f  $MYREPO
+git push --tags -f $MYREPO
 
